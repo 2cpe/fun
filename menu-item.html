@@ -1,0 +1,48 @@
+<style>
+    .menu-item {
+        padding: 12px 15px;
+        margin: 4px 0;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.2s;
+        border-radius: 4px;
+        position: relative;
+    }
+
+    .menu-item:hover {
+        background: rgba(0, 102, 255, 0.1);
+    }
+
+    .menu-item.selected {
+        background: rgba(0, 102, 255, 0.2);
+        box-shadow: 0 0 15px rgba(0, 102, 255, 0.3);
+    }
+
+    .menu-item.selected::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        background: #0066ff;
+        box-shadow: 0 0 8px rgba(0, 102, 255, 0.8);
+    }
+
+    .menu-item-label {
+        font-size: 14px;
+    }
+
+    .menu-item-arrow {
+        color: #0066ff;
+        font-size: 12px;
+        opacity: 0.7;
+    }
+</style>
+
+<div class="menu-item">
+    <span class="menu-item-label">Menu Item</span>
+    <span class="menu-item-arrow">▶</span>
+</div> 

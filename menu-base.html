@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .menu-container {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 300px;
+            background: rgba(16, 16, 36, 0.95);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .menu-header {
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-bottom: 2px solid rgba(0, 102, 255, 0.3);
+        }
+
+        .menu-title {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .menu-subtitle {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .menu-items {
+            padding: 10px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .menu-footer {
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-header">
+            <div class="menu-title">Silent Core</div>
+            <div class="menu-subtitle">The Ultimate Experience</div>
+        </div>
+        <div class="menu-items" id="menuItems">
+            <!-- Items will be inserted here -->
+        </div>
+        <div class="menu-footer">
+            <span>v Test</span>
+            <span>Test</span>
+        </div>
+    </div>
+</body>
+</html> 
